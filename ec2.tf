@@ -2,7 +2,7 @@ resource "aws_instance" "web" {
   ami           = var.AMI_ID
   instance_type = var.INSTANCE_TYPE
   monitoring = true
-  iam_instance_profile = "ec2-full-access-role"
+  iam_instance_profile = "EC2ROLEFORJENKINS"
   ebs_optimized = true
   metadata_options {
     http_endpoint = "enabled"
